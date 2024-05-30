@@ -3,6 +3,7 @@ import { theme } from './theme.js';
 import { comment } from './comment.js';
 import { storage } from './storage.js';
 import { request, HTTP_GET } from './request.js';
+import { saweria } from './saweria.js';
 
 export const util = (() => {
 
@@ -203,6 +204,7 @@ export const util = (() => {
         if (status === 200) {
             animation();
             comment.comment();
+            saweria.renderLeaderboard();
         }
     };
 
